@@ -25,7 +25,7 @@ Run `randSeed.py`, which is used to generate random index number used to randoml
 
 Run the command `file_pre.py filename.csv`, where `filename.csv` should be replaced by file names of feature vectors, in each feature vector's directory for two purposes:
 
-	1. Convert them to libsvm format stored as `.txt` files;
+	1. Convert them to libsvm format stored as .txt files;
 	
 	2. Randomly partition MPs and Non-MPs to 10 parts for later use of 10-fold cross validation.
 	
@@ -63,7 +63,7 @@ Use `trainPre.py` to help, using the model trained in stage 1, predict on traini
 
 ## Step 5
 
-Using the `.arff` files from `Step 4`, one needs to manually operate `Weka` and record prediction results. The completed statistics are stored in `result_stats.csv`.
+Using the `.arff` files from Step 4, one needs to manually operate `Weka` and record prediction results. The completed statistics are stored in `result_stats.csv`.
 
 # Stage 3
 
