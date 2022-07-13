@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     protein_type
+Instances:    324
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+kAAComposition = 0: 0 (200.0/2.0)
+kAAComposition = 1: 1 (124.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          17               62.963  %
+Incorrectly Classified Instances        10               37.037  %
+Kappa statistic                          0.1718
+Mean absolute error                      0.373 
+Root mean squared error                  0.605 
+Relative absolute error                 79.1232 %
+Root relative squared error            125.1799 %
+Total Number of Instances               27     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.765    0.600    0.684      0.765    0.722      0.174    0.582     0.671     0
+                 0.400    0.235    0.500      0.400    0.444      0.174    0.582     0.422     1
+Weighted Avg.    0.630    0.465    0.616      0.630    0.619      0.174    0.582     0.579     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 13  4 |  a = 0
+  6  4 |  b = 1
+

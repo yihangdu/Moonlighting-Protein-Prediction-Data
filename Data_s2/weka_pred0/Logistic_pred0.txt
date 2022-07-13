@@ -1,0 +1,206 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     protein_type
+Instances:    315
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                         0
+==================================
+AAKpartComposition=1       -8.5997
+AAutoCor=1                -32.3575
+CkSAApair=1                -8.9479
+CkSGAApair=1              -12.9777
+CTD=1                        -23.8
+CTDC=1                    -11.0508
+CTDD=1                    -22.0068
+DDE=1                     -25.7264
+ExpectedValueAA=1         -19.4374
+ExpectedValueGAA=1        -30.3757
+ExpectedValueGKmerAA=1     -23.859
+ExpectedValueKmerAA=1     -36.4124
+GrpDDE=1                  -32.3575
+IF=1                      -24.1606
+kAAComposition=1          -19.7049
+kGAAComposition=1           -30.45
+PseKRAAC_T2=1             -22.1051
+PseKRAAC_T3A=1            -14.4481
+PseKRAAC_T3B=1              4.5189
+PseKRAAC_T4=1             -25.5951
+PseKRAAC_T5=1             -20.3929
+PseKRAAC_T6A=1            -24.1185
+PseKRAAC_T6B=1            -36.8745
+PseKRAAC_T7=1             -36.5467
+PseKRAAC_T8=1             -24.0031
+PseKRAAC_T9=1             -23.2252
+PseKRAAC_T10=1            -23.7756
+PseKRAAC_T11=1            -22.9071
+PseKRAAC_T12=1            -36.9311
+PseKRAAC_T13=1            -36.8789
+PseKRAAC_T14=1             -3.9736
+PseKRAAC_T15=1             -7.9606
+PseKRAAC_T16=1             -3.9736
+QSOrder=1                   -9.249
+SAAC=1                    -21.8153
+SGAAC=1                   -32.3575
+SOCNumber=1               -10.4959
+Intercept                 251.7247
+
+
+Odds Ratios...
+                             Class
+Variable                         0
+==================================
+AAKpartComposition=1        0.0002
+AAutoCor=1                       0
+CkSAApair=1                 0.0001
+CkSGAApair=1                     0
+CTD=1                            0
+CTDC=1                           0
+CTDD=1                           0
+DDE=1                            0
+ExpectedValueAA=1                0
+ExpectedValueGAA=1               0
+ExpectedValueGKmerAA=1           0
+ExpectedValueKmerAA=1            0
+GrpDDE=1                         0
+IF=1                             0
+kAAComposition=1                 0
+kGAAComposition=1                0
+PseKRAAC_T2=1                    0
+PseKRAAC_T3A=1                   0
+PseKRAAC_T3B=1             91.7308
+PseKRAAC_T4=1                    0
+PseKRAAC_T5=1                    0
+PseKRAAC_T6A=1                   0
+PseKRAAC_T6B=1                   0
+PseKRAAC_T7=1                    0
+PseKRAAC_T8=1                    0
+PseKRAAC_T9=1                    0
+PseKRAAC_T10=1                   0
+PseKRAAC_T11=1                   0
+PseKRAAC_T12=1                   0
+PseKRAAC_T13=1                   0
+PseKRAAC_T14=1              0.0188
+PseKRAAC_T15=1              0.0003
+PseKRAAC_T16=1              0.0188
+QSOrder=1                   0.0001
+SAAC=1                           0
+SGAAC=1                          0
+SOCNumber=1                      0
+
+
+Time taken to build model: 0.04 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1        2:1        2:1       1 
+        2        2:1        2:1       1 
+        3        2:1        1:0   +   1 
+        4        2:1        1:0   +   1 
+        5        2:1        1:0   +   1 
+        6        2:1        1:0   +   1 
+        7        2:1        2:1       1 
+        8        2:1        2:1       1 
+        9        2:1        1:0   +   1 
+       10        2:1        2:1       0.967 
+       11        2:1        1:0   +   1 
+       12        2:1        2:1       1 
+       13        2:1        2:1       1 
+       14        2:1        2:1       1 
+       15        1:0        1:0       1 
+       16        1:0        1:0       1 
+       17        1:0        1:0       1 
+       18        1:0        2:1   +   1 
+       19        1:0        1:0       1 
+       20        1:0        1:0       1 
+       21        1:0        1:0       1 
+       22        1:0        2:1   +   1 
+       23        1:0        2:1   +   1 
+       24        1:0        1:0       1 
+       25        1:0        1:0       1 
+       26        1:0        1:0       1 
+       27        1:0        1:0       1 
+       28        1:0        2:1   +   1 
+       29        1:0        1:0       1 
+       30        1:0        1:0       1 
+       31        1:0        1:0       1 
+       32        1:0        1:0       1 
+       33        1:0        1:0       1 
+       34        1:0        1:0       1 
+       35        1:0        1:0       1 
+       36        1:0        1:0       1 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          26               72.2222 %
+Incorrectly Classified Instances        10               27.7778 %
+Kappa statistic                          0.4   
+Mean absolute error                      0.2787
+Root mean squared error                  0.5271
+Relative absolute error                 58.6591 %
+Root relative squared error            108.1182 %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.818    0.429    0.750      0.818    0.783      0.403    0.773     0.798     0
+                 0.571    0.182    0.667      0.571    0.615      0.403    0.769     0.621     1
+Weighted Avg.    0.722    0.333    0.718      0.722    0.718      0.403    0.771     0.729     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  4 |  a = 0
+  6  8 |  b = 1
+

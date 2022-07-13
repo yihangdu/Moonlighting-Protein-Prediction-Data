@@ -1,0 +1,271 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     protein_type
+Instances:    315
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                        Class
+Attribute                   0      1
+                       (0.61) (0.39)
+=====================================
+AAKpartComposition
+  0                      176.0   40.0
+  1                       19.0   84.0
+  [total]                195.0  124.0
+
+AAutoCor
+  0                      183.0   45.0
+  1                       12.0   79.0
+  [total]                195.0  124.0
+
+CkSAApair
+  0                      188.0   56.0
+  1                        7.0   68.0
+  [total]                195.0  124.0
+
+CkSGAApair
+  0                      186.0   34.0
+  1                        9.0   90.0
+  [total]                195.0  124.0
+
+CTD
+  0                      190.0   36.0
+  1                        5.0   88.0
+  [total]                195.0  124.0
+
+CTDC
+  0                      186.0   72.0
+  1                        9.0   52.0
+  [total]                195.0  124.0
+
+CTDD
+  0                      191.0   50.0
+  1                        4.0   74.0
+  [total]                195.0  124.0
+
+DDE
+  0                      194.0    3.0
+  1                        1.0  121.0
+  [total]                195.0  124.0
+
+ExpectedValueAA
+  0                      191.0    2.0
+  1                        4.0  122.0
+  [total]                195.0  124.0
+
+ExpectedValueGAA
+  0                      192.0   25.0
+  1                        3.0   99.0
+  [total]                195.0  124.0
+
+ExpectedValueGKmerAA
+  0                      183.0   56.0
+  1                       12.0   68.0
+  [total]                195.0  124.0
+
+ExpectedValueKmerAA
+  0                      193.0   29.0
+  1                        2.0   95.0
+  [total]                195.0  124.0
+
+GrpDDE
+  0                      191.0   19.0
+  1                        4.0  105.0
+  [total]                195.0  124.0
+
+IF
+  0                       88.0   16.0
+  1                      107.0  108.0
+  [total]                195.0  124.0
+
+kAAComposition
+  0                      193.0    2.0
+  1                        2.0  122.0
+  [total]                195.0  124.0
+
+kGAAComposition
+  0                      193.0   28.0
+  1                        2.0   96.0
+  [total]                195.0  124.0
+
+PseKRAAC_T2
+  0                      185.0   69.0
+  1                       10.0   55.0
+  [total]                195.0  124.0
+
+PseKRAAC_T3A
+  0                      190.0  107.0
+  1                        5.0   17.0
+  [total]                195.0  124.0
+
+PseKRAAC_T3B
+  0                      180.0   64.0
+  1                       15.0   60.0
+  [total]                195.0  124.0
+
+PseKRAAC_T4
+  0                      193.0   24.0
+  1                        2.0  100.0
+  [total]                195.0  124.0
+
+PseKRAAC_T5
+  0                      192.0   54.0
+  1                        3.0   70.0
+  [total]                195.0  124.0
+
+PseKRAAC_T6A
+  0                      194.0   14.0
+  1                        1.0  110.0
+  [total]                195.0  124.0
+
+PseKRAAC_T6B
+  0                      192.0   33.0
+  1                        3.0   91.0
+  [total]                195.0  124.0
+
+PseKRAAC_T7
+  0                      193.0   34.0
+  1                        2.0   90.0
+  [total]                195.0  124.0
+
+PseKRAAC_T8
+  0                      194.0   17.0
+  1                        1.0  107.0
+  [total]                195.0  124.0
+
+PseKRAAC_T9
+  0                      194.0    3.0
+  1                        1.0  121.0
+  [total]                195.0  124.0
+
+PseKRAAC_T10
+  0                      193.0    2.0
+  1                        2.0  122.0
+  [total]                195.0  124.0
+
+PseKRAAC_T11
+  0                      194.0   63.0
+  1                        1.0   61.0
+  [total]                195.0  124.0
+
+PseKRAAC_T12
+  0                      192.0   42.0
+  1                        3.0   82.0
+  [total]                195.0  124.0
+
+PseKRAAC_T13
+  0                      193.0   21.0
+  1                        2.0  103.0
+  [total]                195.0  124.0
+
+PseKRAAC_T14
+  0                      189.0   61.0
+  1                        6.0   63.0
+  [total]                195.0  124.0
+
+PseKRAAC_T15
+  0                      192.0   22.0
+  1                        3.0  102.0
+  [total]                195.0  124.0
+
+PseKRAAC_T16
+  0                      189.0   61.0
+  1                        6.0   63.0
+  [total]                195.0  124.0
+
+QSOrder
+  0                      171.0   31.0
+  1                       24.0   93.0
+  [total]                195.0  124.0
+
+SAAC
+  0                      194.0    3.0
+  1                        1.0  121.0
+  [total]                195.0  124.0
+
+SGAAC
+  0                      193.0    9.0
+  1                        2.0  115.0
+  [total]                195.0  124.0
+
+SOCNumber
+  0                      188.0   71.0
+  1                        7.0   53.0
+  [total]                195.0  124.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          26               72.2222 %
+Incorrectly Classified Instances        10               27.7778 %
+Kappa statistic                          0.3478
+Mean absolute error                      0.2771
+Root mean squared error                  0.5254
+Relative absolute error                 58.3184 %
+Root relative squared error            107.7801 %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.955    0.643    0.700      0.955    0.808      0.408    0.727     0.762     0
+                 0.357    0.045    0.833      0.357    0.500      0.408    0.781     0.664     1
+Weighted Avg.    0.722    0.411    0.752      0.722    0.688      0.408    0.748     0.724     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 21  1 |  a = 0
+  9  5 |  b = 1
+

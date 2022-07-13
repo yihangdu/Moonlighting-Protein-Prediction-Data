@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     protein_type
+Instances:    315
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class 0 :
+2.84 + 
+[AAutoCor=1] * -0.98 +
+[IF=1] * -0.86 +
+[PseKRAAC_T10=1] * -1.1 +
+[SAAC=1] * -1.97 +
+[SOCNumber=1] * -1.04
+
+Class 1 :
+-2.84 + 
+[AAutoCor=1] * 0.98 +
+[IF=1] * 0.86 +
+[PseKRAAC_T10=1] * 1.1  +
+[SAAC=1] * 1.97 +
+[SOCNumber=1] * 1.04
+
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          28               77.7778 %
+Incorrectly Classified Instances         8               22.2222 %
+Kappa statistic                          0.52  
+Mean absolute error                      0.2914
+Root mean squared error                  0.4537
+Relative absolute error                 61.3391 %
+Root relative squared error             93.0594 %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.864    0.357    0.792      0.864    0.826      0.524    0.797     0.852     0
+                 0.643    0.136    0.750      0.643    0.692      0.524    0.797     0.663     1
+Weighted Avg.    0.778    0.271    0.775      0.778    0.774      0.524    0.797     0.779     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  3 |  a = 0
+  5  9 |  b = 1
+

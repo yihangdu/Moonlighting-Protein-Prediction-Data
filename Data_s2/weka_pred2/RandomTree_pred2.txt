@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     protein_type
+Instances:    315
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+kAAComposition = 0
+|   PseKRAAC_T2 = 0
+|   |   SGAAC = 0 : 0 (177/0)
+|   |   SGAAC = 1
+|   |   |   AAutoCor = 0 : 0 (1/0)
+|   |   |   AAutoCor = 1 : 0 (2/1)
+|   PseKRAAC_T2 = 1
+|   |   IF = 0 : 0 (5/0)
+|   |   IF = 1
+|   |   |   AAKpartComposition = 0
+|   |   |   |   ExpectedValueGAA = 0
+|   |   |   |   |   PseKRAAC_T5 = 0 : 0 (3/0)
+|   |   |   |   |   PseKRAAC_T5 = 1 : 0 (2/1)
+|   |   |   |   ExpectedValueGAA = 1 : 0 (2/1)
+|   |   |   AAKpartComposition = 1 : 0 (4/0)
+kAAComposition = 1 : 1 (119/0)
+
+Size of the tree : 17
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          28               77.7778 %
+Incorrectly Classified Instances         8               22.2222 %
+Kappa statistic                          0.52  
+Mean absolute error                      0.2222
+Root mean squared error                  0.4564
+Relative absolute error                 46.7724 %
+Root relative squared error             93.628  %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.864    0.357    0.792      0.864    0.826      0.524    0.776     0.789     0
+                 0.643    0.136    0.750      0.643    0.692      0.524    0.776     0.644     1
+Weighted Avg.    0.778    0.271    0.775      0.778    0.774      0.524    0.776     0.733     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19  3 |  a = 0
+  5  9 |  b = 1
+

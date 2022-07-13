@@ -1,0 +1,127 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     protein_type
+Instances:    324
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=38 #classindex=37
+Network structure (nodes followed by parents)
+AAKpartComposition(2): ProteinType 
+AAutoCor(2): ProteinType 
+CkSAApair(2): ProteinType 
+CkSGAApair(2): ProteinType 
+CTD(2): ProteinType 
+CTDC(2): ProteinType 
+CTDD(2): ProteinType 
+DDE(2): ProteinType 
+ExpectedValueAA(2): ProteinType 
+ExpectedValueGAA(2): ProteinType 
+ExpectedValueGKmerAA(2): ProteinType 
+ExpectedValueKmerAA(2): ProteinType 
+GrpDDE(2): ProteinType 
+IF(2): ProteinType 
+kAAComposition(2): ProteinType 
+kGAAComposition(2): ProteinType 
+PseKRAAC_T2(2): ProteinType 
+PseKRAAC_T3A(2): ProteinType 
+PseKRAAC_T3B(2): ProteinType 
+PseKRAAC_T4(2): ProteinType 
+PseKRAAC_T5(2): ProteinType 
+PseKRAAC_T6A(2): ProteinType 
+PseKRAAC_T6B(2): ProteinType 
+PseKRAAC_T7(2): ProteinType 
+PseKRAAC_T8(2): ProteinType 
+PseKRAAC_T9(2): ProteinType 
+PseKRAAC_T10(2): ProteinType 
+PseKRAAC_T11(2): ProteinType 
+PseKRAAC_T12(2): ProteinType 
+PseKRAAC_T13(2): ProteinType 
+PseKRAAC_T14(2): ProteinType 
+PseKRAAC_T15(2): ProteinType 
+PseKRAAC_T16(2): ProteinType 
+QSOrder(2): ProteinType 
+SAAC(2): ProteinType 
+SGAAC(2): ProteinType 
+SOCNumber(2): ProteinType 
+ProteinType(2): 
+LogScore Bayes: -3209.257625830958
+LogScore BDeu: -3272.819942156992
+LogScore MDL: -3343.8533245353447
+LogScore ENTROPY: -3127.0754426931294
+LogScore AIC: -3202.0754426931294
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          19               70.3704 %
+Incorrectly Classified Instances         8               29.6296 %
+Kappa statistic                          0.2752
+Mean absolute error                      0.2783
+Root mean squared error                  0.5167
+Relative absolute error                 59.047  %
+Root relative squared error            106.9233 %
+Total Number of Instances               27     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.941    0.700    0.696      0.941    0.800      0.328    0.718     0.775     0
+                 0.300    0.059    0.750      0.300    0.429      0.328    0.741     0.700     1
+Weighted Avg.    0.704    0.463    0.716      0.704    0.662      0.328    0.726     0.747     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 16  1 |  a = 0
+  7  3 |  b = 1
+

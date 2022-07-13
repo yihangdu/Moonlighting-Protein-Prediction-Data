@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     protein_type
+Instances:    315
+Attributes:   38
+              AAKpartComposition
+              AAutoCor
+              CkSAApair
+              CkSGAApair
+              CTD
+              CTDC
+              CTDD
+              DDE
+              ExpectedValueAA
+              ExpectedValueGAA
+              ExpectedValueGKmerAA
+              ExpectedValueKmerAA
+              GrpDDE
+              IF
+              kAAComposition
+              kGAAComposition
+              PseKRAAC_T2
+              PseKRAAC_T3A
+              PseKRAAC_T3B
+              PseKRAAC_T4
+              PseKRAAC_T5
+              PseKRAAC_T6A
+              PseKRAAC_T6B
+              PseKRAAC_T7
+              PseKRAAC_T8
+              PseKRAAC_T9
+              PseKRAAC_T10
+              PseKRAAC_T11
+              PseKRAAC_T12
+              PseKRAAC_T13
+              PseKRAAC_T14
+              PseKRAAC_T15
+              PseKRAAC_T16
+              QSOrder
+              SAAC
+              SGAAC
+              SOCNumber
+              ProteinType
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.02 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1        2:1        1:0   +   0.92 
+        2        2:1        1:0   +   0.88 
+        3        2:1        2:1       0.59 
+        4        2:1        1:0   +   0.811 
+        5        2:1        1:0   +   1 
+        6        2:1        2:1       0.723 
+        7        2:1        1:0   +   0.57 
+        8        2:1        1:0   +   1 
+        9        2:1        2:1       0.91 
+       10        2:1        1:0   +   0.741 
+       11        2:1        2:1       1 
+       12        2:1        2:1       0.97 
+       13        2:1        2:1       0.703 
+       14        2:1        1:0   +   0.718 
+       15        1:0        2:1   +   0.57 
+       16        1:0        1:0       0.89 
+       17        1:0        1:0       1 
+       18        1:0        1:0       1 
+       19        1:0        1:0       0.89 
+       20        1:0        1:0       0.89 
+       21        1:0        1:0       0.84 
+       22        1:0        1:0       1 
+       23        1:0        1:0       0.88 
+       24        1:0        1:0       0.96 
+       25        1:0        1:0       0.96 
+       26        1:0        1:0       1 
+       27        1:0        1:0       1 
+       28        1:0        1:0       0.864 
+       29        1:0        1:0       1 
+       30        1:0        1:0       1 
+       31        1:0        1:0       0.87 
+       32        1:0        1:0       1 
+       33        1:0        1:0       0.93 
+       34        1:0        1:0       0.887 
+       35        1:0        2:1   +   0.79 
+       36        1:0        1:0       0.91 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          26               72.2222 %
+Incorrectly Classified Instances        10               27.7778 %
+Kappa statistic                          0.3662
+Mean absolute error                      0.287 
+Root mean squared error                  0.4441
+Relative absolute error                 60.4114 %
+Root relative squared error             91.0947 %
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.571    0.714      0.909    0.800      0.396    0.794     0.806     0
+                 0.429    0.091    0.750      0.429    0.545      0.396    0.794     0.762     1
+Weighted Avg.    0.722    0.385    0.728      0.722    0.701      0.396    0.794     0.789     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20  2 |  a = 0
+  8  6 |  b = 1
+
