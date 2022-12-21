@@ -67,7 +67,7 @@ Using the `.arff` files from Step 4, one needs to manually operate `Weka` and re
 
 # Stage 3
 
-This stage is not closely related to the previous two. We perform `PSI-BLAST` against the non-redundant protein database for each protein sequence to generate PSSM profiles. Based on the PSSM profiles, we re-construct feature vectors for each protein. This stage now has not been fully finished yet.
+This stage is not closely related to the previous two. We perform `PSI-BLAST` against the non-redundant protein database for each protein sequence to generate PSSM profiles. Based on the PSSM profiles, we re-construct feature vectors for each protein. This stage now has been fully finished. To properly use the scripts, one should put folder `prepared_scripts/Stage3` in `Data_s3`. Then the one can just call `python3 scriptName.py` in its corresponding directory to run.
 
 ## Step 1
 
@@ -79,4 +79,28 @@ One should run `runPsiBlast.py` in the same directory as where non-redundant pro
 
 ## Step 3
 
-As we have all PSSM profiles prepared well now. One can run `pssm_Process.py` to process these profiles and generate feature vectors for each protein sequence. There should be 20 pairs of files generated ,kept in seperate folders, corresponding to different alpha values ranging from 1 to 20.
+As we have all PSSM profiles prepared well now. One can run `pssm_Process.py` to process these profiles and generate feature vectors for each protein sequence. There should be 20 pairs of files generated ,kept in separate folders, corresponding to different alpha values ranging from 1 to 20.
+
+## Step 4
+
+This step is to use SVM to obtain predictions. One should call `convert_svm.py` to convert all feature vectors to SVM required format. Then call `runSVM.py` to predict. Note that `runSVM.py` should be put in `libsvm/tools` to run, and other scripts should stay where they are. After that, `evaluate.py` can be called to obtain performance evaluation.
+
+## Step 5
+
+From this step, we begin our second layer model. Firstly, we should predict proteins on training set. One can call `predictTrain.py` to finish this step. All files will be managed properly and automatically. Then `input_construct.py` is offered to convert data to Weka required format. Scripts for calling Weka are not provided here, so one can choose to write one or use Weka manually. Performance evaluation is done by Weka. To ensure the correctness, one can check `Data_s3/weka_stats.csv`. This file was constructed manually.
+
+# Stage 4
+
+This stage is to perform heuristic feature selection. Each round, we drop one feature from a feature vector each time for each protein, and select the one with best performance by MCC. Then drop another feature based on the previous dropped feature vectors until there is no significant increase in performance. Scripts for this stage are stored in `Feature_Selection/scripts`. Users can call all scripts prepared for this stage on-site. 
+
+## Step 1
+
+We initially chose feature vectors with alpha equal to 1 from Stage 3. Firstly, one should call `python3 drop.py <MP_filePath> <nMP_filePath> <round_num>` to drop one feature from each feature vector. Each feature will be dropped once, and 10 pairs of training set and testing set will be generated each time for 10-fold validation. There are three command-line arguments for `drop.py` that should be specified. `MP_filePath` and `nMP_filePath` are file paths for moonlighting proteins and non-moonlighting proteins respectively. `round_num` is the round number of feature selection, beginning from 1 and with upper bound 40. `drop.py` will call `convert_svm.py` automatically, which convert all dropped feature vectors to SVM required format and generate training sets and testing sets.
+
+## Step 2
+
+Then one should put `runSVM.py` in `libsvm/tools` to predict by calling `python3 runSVM.py <round_num> <drop_total>`. There are two command-line arguments that should be specified. `round_num` should be the same as the number specified for `drop.py` in step 1. `drop_total` is actually the current length of feature vector, beginning from 40 and with lower bound 1. To check the correctness of the arguments, one can check if the sum of `round_num` and `drop_total` is equal to 41.
+
+## Step 3
+
+Last step is to evaluate performances after each round of drop. `evaluate.py` is provided to finish this step. One should call `python3 evaluate.py <round_num> <drop_total>` to use. The two command-line arguments are the same as step 2 for each round.

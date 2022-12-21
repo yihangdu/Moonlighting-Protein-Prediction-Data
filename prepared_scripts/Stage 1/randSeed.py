@@ -1,8 +1,8 @@
 import random
 def main():
 
-    outfile_1 = open("random_select_1.txt",'w')
-    outfile_0 = open("random_select_0.txt",'w')
+    outfile_1 = open("new_random_1.txt",'w')
+    outfile_0 = open("new_random_0.txt",'w')
     
     oList_1 = [i for i in range(136)]
     oList_0 = [i for i in range(136,351)]

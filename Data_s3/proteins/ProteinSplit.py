@@ -1,3 +1,7 @@
+"""
+This program split MPs and nonMPs to seperate files. All files are managed automatically. 
+"""
+
 import os
 def process(file, isMp):
 
